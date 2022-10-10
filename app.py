@@ -15,7 +15,7 @@ def follow_back():
     for follower in followers:
         if follower not in friends:
             to_follow.append(follower)
-            #api.create_friendship(follower)
+            api.create_friendship(follower)
     print("-----You have followed:",len(to_follow),"More----")
 
 follow_back()
